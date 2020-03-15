@@ -1,0 +1,13 @@
+//Here, T1 and T2 will get the read locks due to multiversion concurrency control. 
+// T3 will not get write lock as there is a read lock on that variable. 
+//T4 will not get read lock as T3 is waiting for a write lock before.
+
+begin(T1)
+begin(T2)
+begin(T3)
+begin(T4)
+R(T1,x3)
+R(T2,x3)
+W(T3,x3,98)
+R(T4,x3)
+dump()

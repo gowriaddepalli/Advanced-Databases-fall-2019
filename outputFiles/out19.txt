@@ -1,0 +1,498 @@
+ Set up the sites and variables at each site 
+
+Start Transaction: 3
+
+
+ *** Operation Ends *** 
+
+Start Transaction: 1
+
+
+ *** Operation Ends *** 
+
+Start Transaction: 2
+
+
+ *** Operation Ends *** 
+
+W(T3,x2,22)
+
+
+ Performing a write operation for Transaction 3 for variable number 2
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 1 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 2 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 3 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 4 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 5 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 6 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 7 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 8 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 9 
+
+
+ Adding lock on transaction T:3 and variable number 2 for site 10 
+
+
+ *** Operation Ends *** 
+
+W(T2,x3,44)
+
+
+ Performing a write operation for Transaction 2 for variable number 3
+
+
+ Adding lock on transaction T:2 and variable number 3 for site 4 
+
+
+ *** Operation Ends *** 
+
+R(T3,x3)
+
+
+ Performing a read operation for Transaction 3 for variable number 3
+
+
+ Adding lock on transaction T:3 and variable number 3 for site 4 
+
+Graph after adding edge is: defaultdict(<class 'list'>, {3: [], 1: [], 2: [3]})
+
+
+Detecting a cycle 
+
+
+ *** Operation Ends *** 
+
+
+ end Transaction T:2
+
+
+
+ Committing operation with transaction number T:2and variable number 3
+
+
+
+ Committing a given transaction 2 for operation type TransactionOperationType.Write for variable 3
+
+Variable x: 3 Transaction T:2 Operation Write: 44 Site:4
+
+
+ Dropping lock on transaction 2and variable number3 for site 4 
+
+
+ T2 Normal Commit 
+
+
+ Running Pending Operations. 
+
+ Performing a read operation for Transaction 3 for variable number 3
+
+
+ Adding lock on transaction T:3 and variable number 3 for site 4 
+
+
+ Committing a given transaction 3 for operation type TransactionOperationType.Read for variable 3
+
+Variable x: 3 Transaction T:3 Operation Read: 44 Site: 4
+
+
+
+
+ Operation with Transaction T: 3 Got Lock TransactionOperationType.Read X 3 
+
+
+ *** Operation Ends *** 
+
+4
+
+ Site Failing: 
+ The site: 4 got failed. Transactions running in this site would be aborted. 
+
+
+ The site got failed.
+ Abort Transaction: T3 
+
+
+ Trying to abort the following transaction T: 3
+
+ Running Pending Operations. 
+
+ *** Operation Ends *** 
+
+
+ *** Operation Ends *** 
+
+R(T1,x2)
+
+
+ Performing a read operation for Transaction 1 for variable number 2
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 1 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:1
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 2 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:2
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 3 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:3
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 4 
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 5 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:5
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 6 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:6
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 7 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:7
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 8 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:8
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 9 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:9
+
+
+ Adding lock on transaction T:1 and variable number 2 for site 10 
+
+
+ Committing a given transaction 1 for operation type TransactionOperationType.Read for variable 2
+
+Variable x: 2 Transaction T:1 Operation Read: 20 Site:10
+
+
+
+
+
+
+ *** Operation Ends *** 
+
+
+ end Transaction T:1
+
+
+Odd variable Lock got dropped.
+
+ Dropping lock on transaction 1and variable number2 for site 1 
+
+
+ Dropping lock on transaction 1and variable number2 for site 2 
+
+
+ Dropping lock on transaction 1and variable number2 for site 3 
+
+
+ Dropping lock on transaction 1and variable number2 for site 4 
+
+
+ Dropping lock on transaction 1and variable number2 for site 5 
+
+
+ Dropping lock on transaction 1and variable number2 for site 6 
+
+
+ Dropping lock on transaction 1and variable number2 for site 7 
+
+
+ Dropping lock on transaction 1and variable number2 for site 8 
+
+
+ Dropping lock on transaction 1and variable number2 for site 9 
+
+
+ Dropping lock on transaction 1and variable number2 for site 10 
+
+Odd variable Lock got dropped.
+
+ Dropping lock on transaction 1and variable number2 for site 1 
+
+
+ Dropping lock on transaction 1and variable number2 for site 2 
+
+
+ Dropping lock on transaction 1and variable number2 for site 3 
+
+
+ Dropping lock on transaction 1and variable number2 for site 4 
+
+
+ Dropping lock on transaction 1and variable number2 for site 5 
+
+
+ Dropping lock on transaction 1and variable number2 for site 6 
+
+
+ Dropping lock on transaction 1and variable number2 for site 7 
+
+
+ Dropping lock on transaction 1and variable number2 for site 8 
+
+
+ Dropping lock on transaction 1and variable number2 for site 9 
+
+
+ Dropping lock on transaction 1and variable number2 for site 10 
+
+
+ T1 Normal Commit 
+
+
+ Running Pending Operations. 
+
+ *** Operation Ends *** 
+
+dump()
+
+
+Dump of Site:1
+The site health is: -> SiteHealthSignal.UP
+site number ->1
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:2
+The site health is: -> SiteHealthSignal.UP
+site number ->2
+_________________________________________
+
+Variable x1->10
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x11->110
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:3
+The site health is: -> SiteHealthSignal.UP
+site number ->3
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:4
+The site health is: -> SiteHealthSignal.DOWN
+site number ->4
+_________________________________________
+
+Variable x2->20
+Variable x3->44
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x13->130
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:5
+The site health is: -> SiteHealthSignal.UP
+site number ->5
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:6
+The site health is: -> SiteHealthSignal.UP
+site number ->6
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x5->50
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x15->150
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:7
+The site health is: -> SiteHealthSignal.UP
+site number ->7
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:8
+The site health is: -> SiteHealthSignal.UP
+site number ->8
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x7->70
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x17->170
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:9
+The site health is: -> SiteHealthSignal.UP
+site number ->9
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x20->200
+*************
+
+
+Dump of Site:10
+The site health is: -> SiteHealthSignal.UP
+site number ->10
+_________________________________________
+
+Variable x2->20
+Variable x4->40
+Variable x6->60
+Variable x8->80
+Variable x9->90
+Variable x10->100
+Variable x12->120
+Variable x14->140
+Variable x16->160
+Variable x18->180
+Variable x19->190
+Variable x20->200
+*************
+
+
+
+ *** Operation Ends *** 
+

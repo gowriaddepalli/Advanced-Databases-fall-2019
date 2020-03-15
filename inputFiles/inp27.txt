@@ -1,0 +1,7 @@
+// T3 will be able to update write lock.
+begin(T3)
+begin(T3)
+R(T3,x5)
+R(T4,x5)
+W(T3,x5,29)
+dump()

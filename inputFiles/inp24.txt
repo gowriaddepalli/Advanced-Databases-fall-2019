@@ -1,0 +1,13 @@
+// There will be edge from T2 to T3 but the R(T3,x1) will not need to wait for a lock because T3 already has a write-lock. 
+// W(T3,x1,99) will be able to write as it already has a write lock.
+// T3 and T2 both commit.
+
+begin(T3)
+begin(T2)
+W(T3,x1,55)
+R(T2,x1)
+R(T3,x1)
+W(T3,x1,99)
+end(T3)
+end(T2)
+dump()

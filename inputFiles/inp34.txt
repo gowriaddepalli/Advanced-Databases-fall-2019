@@ -1,0 +1,8 @@
+// T1 commits
+
+begin(T1)
+begin(T2)
+R(T2,x6)
+W(T2,x6,32)
+end(T1)
+dump()

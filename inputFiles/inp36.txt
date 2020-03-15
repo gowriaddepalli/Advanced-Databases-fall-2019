@@ -1,0 +1,18 @@
+// T5 gets read lock on x3 and aborts when site 4 fails.
+// T6 gets write lock on x8 and since site 4 is down, it cannot access x3.
+// T6 writes x8 to 88 on all the sites except site 4.
+// Here, we dont commit T6 with x8 being written and x3 not.
+
+begin(T5)
+begin(T6)
+begin(T7)
+R(T5,x3)
+fail(4)
+W(T6,x8,88) 
+W(T6,x3,40)
+R(T5,x5)
+end(T6)
+recover(4)
+end(T5)
+dump()
+

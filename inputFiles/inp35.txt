@@ -1,0 +1,30 @@
+// T1 would abort as site 1 goes down. 
+// T2 will commit.
+// T3 writes to x1 and commit.
+// T4 writes to x2 on site 2  and writes to x8 and commit.
+// all other sites will not be able to read this variable once they recover, until written by some other transaction.
+
+begin(T1)
+W(T1,x2,90)
+fail(1)
+end(T1)
+begin(T2)
+W(T2,x4,100)
+end(T2)
+fail(2)
+fail(3)
+fail(4)
+fail(5)
+fail(6)
+fail(7)
+fail(8)
+fail(9)
+fail(10)
+begin(T3)
+W(T3,x1,33)
+recover(2)
+begin(T4)
+W(T4,x8,22)
+end(T4)
+end(T3)
+dump()

@@ -1,0 +1,16 @@
+// T4 aborts
+// T5 commits
+//T6 commits
+
+begin(T4)
+begin(T5)
+begin(T6)
+W(T4,x4,9)
+fail(4) 
+W(T5,x3,90) 
+W(T6,x4,87) 
+recover(4)
+end(T4)
+end(T5)
+end(T6)
+dump()

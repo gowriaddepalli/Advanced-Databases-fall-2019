@@ -1,0 +1,17 @@
+// T2 commits
+// T1 aborts
+// T3 commits
+
+begin(T1)
+begin(T2)
+begin(T3)
+W(T1,x1, 9)
+fail(2)
+W(T2,x8,88) 
+W(T2,x1,40)
+R(T1,x5)
+recover(2)
+end(T2)
+end(T1)
+end(T3)
+dump()
